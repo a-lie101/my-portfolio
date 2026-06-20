@@ -19,11 +19,13 @@ export function Experience() {
               <div>
                 <h3 className="experience__role">{job.role}</h3>
                 <p className="experience__company">{job.company}</p>
-                <div className="experience__points">
-                  {job.points.map((point, pi) => (
-                    <p className="experience__point" key={pi}>{point}</p>
-                  ))}
-                </div>
+                {job.points.length > 0 && (
+                  <div className="experience__points">
+                    {job.points.map((point, pi) => (
+                      <p className="experience__point" key={pi}>{point}</p>
+                    ))}
+                  </div>
+                )}
               </div>
             </article>
           ))}
