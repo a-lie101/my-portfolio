@@ -1,0 +1,140 @@
+.skills {
+  border-top: 1px solid var(--color-border);
+}
+
+.skills__intro {
+  max-width: 46ch;
+  margin-top: 1.25rem;
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+  line-height: 1.8;
+}
+
+/* ── Pipeline flow ───────────────────────────────────────────── */
+.skills__flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+  margin-top: 3.5rem;
+}
+
+.skills__stage {
+  position: relative;
+  padding: 1.75rem 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  transition: border-color 0.4s ease, transform 0.4s ease, background 0.4s ease;
+}
+
+.skills__stage:hover {
+  border-color: rgba(210, 176, 116, 0.4);
+  background: var(--color-surface-2);
+  transform: translateY(-4px);
+}
+
+.skills__stage-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin-bottom: 0.85rem;
+}
+
+.skills__stage-num {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+}
+
+.skills__stage-name {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.skills__stage-caption {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  min-height: 3.2em;
+}
+
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills__tag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease;
+}
+
+.skills__tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-accent-dim);
+}
+
+/* ── Connector between stages (data flowing) ─────────────────── */
+.skills__connector {
+  position: absolute;
+  top: 2.4rem;
+  right: -1.75rem;
+  width: 1.75rem;
+  height: 1px;
+  background: var(--color-border);
+  z-index: 2;
+}
+
+.skills__pulse {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  margin-top: -2.5px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 6px var(--color-accent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .skills__pulse {
+    animation: pulseFlow 2.4s ease-in-out infinite;
+  }
+  .skills__stage:nth-child(2) .skills__pulse { animation-delay: 0.3s; }
+  .skills__stage:nth-child(3) .skills__pulse { animation-delay: 0.6s; }
+}
+
+@keyframes pulseFlow {
+  0%        { transform: translateX(0);     opacity: 0; }
+  15%       { opacity: 1; }
+  85%       { opacity: 1; }
+  100%      { transform: translateX(1.75rem); opacity: 0; }
+}
+
+@media (max-width: 900px) {
+  .skills__flow {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  .skills__connector { display: none; }
+  .skills__stage-caption { min-height: 0; }
+}
+
+@media (max-width: 560px) {
+  .skills__flow {
+    grid-template-columns: 1fr;
+  }
+}
