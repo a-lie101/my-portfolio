@@ -10,22 +10,22 @@ export function Contact() {
         <div className="contact__inner">
           <h2 className="contact__heading">Let&apos;s build something.</h2>
           <p className="contact__sub">
-            I&apos;m open to full-time roles, freelance projects, and interesting
+            I&apos;m open to internships, freelance projects, and interesting
             conversations. If something you&apos;re working on sounds like it might be
             a fit, reach out.
           </p>
 
           <a
-            href="mailto:rraaza101@gmail.com"
+            href="mailto:ali.r.abbas.2005@gmail.com"
             className="contact__email"
             data-cursor-hover
           >
-            rraaza101@gmail.com
+            ali.r.abbas.2005@gmail.com
           </a>
 
           <div className="contact__socials">
             <a
-              href="https://github.com/aliabbas"
+              href="https://github.com/a-lie101"
               target="_blank"
               rel="noopener noreferrer"
               className="contact__social"
@@ -34,7 +34,7 @@ export function Contact() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/aliabbas"
+              href="https://www.linkedin.com/in/alirazaabbas/"
               target="_blank"
               rel="noopener noreferrer"
               className="contact__social"

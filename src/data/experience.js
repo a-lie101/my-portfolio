@@ -1,5 +1,12 @@
 export const experience = [
   {
+    id: 0,
+    role: 'Technical Product Manager',
+    company: 'ESGTree',
+    period: 'Jun 2026 — Present',
+    points: [],
+  },
+  {
     id: 1,
     role: 'Machine Learning Developer',
     company: 'UBC MINT Engineering Design Team',

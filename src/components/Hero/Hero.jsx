@@ -34,9 +34,9 @@ export function Hero() {
         </h1>
 
         <p className="hero__tagline">
-          I build data pipelines and machine learning systems — turning messy,
-          multi-source data into reliable, queryable insight. Currently open to
-          new opportunities.
+          I love building things that solve real problems. I move comfortably
+          between data pipelines and full-stack platforms, and am always seeking
+          opportunities to apply these skills to hard, meaningful challenges.
         </p>
 
         <div className="hero__cta">

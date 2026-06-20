@@ -1,3 +1,5 @@
+import { ProjectVisual } from './ProjectVisual'
+
 export function ProjectCard({ project, index }) {
   const num = String(index + 1).padStart(2, '0')
 
@@ -5,6 +7,7 @@ export function ProjectCard({ project, index }) {
     <article className="project-card" data-cursor-hover>
       <div className="project-card__image">
         <div className="project-card__image-pattern" />
+        <ProjectVisual visual={project.visual} />
       </div>
 
       <div className="project-card__body">

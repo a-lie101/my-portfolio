@@ -18,24 +18,24 @@ export function About() {
               I&apos;m a Mathematics and Data Science student at UBC, though I got
               here by way of a few places. I grew up in Bahrain, I&apos;m Pakistani,
               and I now live in Vancouver. Moving between those worlds is probably
-              why I&apos;m comfortable sitting between things — which is more or less
+              why I&apos;m comfortable sitting between things, which is more or less
               how I work too.
             </p>
             <p>
-              Ultimately, I thoroughly enjoy problem solving, and lately I&apos;ve
-              taken an affinity to the data side. I enjoy the part where you take
-              something raw and messy and figure out what it&apos;s actually telling
-              you, then build a model that still holds up when it meets data it has
-              never seen. I also enjoy writing the software around the data — the
-              pipelines and interfaces that decide whether any of the analysis ever
-              gets used.
+              Ultimately, I thoroughly enjoy problem solving. Recently, I&apos;ve
+              taken an affinity towards the data side, and the problems associated
+              with that. I enjoy the part where you take something raw and messy and
+              figure out what it&apos;s actually telling you, then build a model that
+              still holds up when it meets data it has never seen. I also enjoy
+              writing the software around the data, the pipelines and interfaces that
+              decide whether any of the analysis ever gets used.
             </p>
             <p>
-              Away from the screen, I play a lot of chess and love sports,
+              Away from the screen, I play a lot of chess and love playing sports,
               especially volleyball and basketball. Lately I&apos;ve also been deep
-              in a board game phase (insane Catan addiction, iykyk). They scratch
-              the same itch the work does: read a messy situation, weigh the odds,
-              and make a decent decision before you have all the information.
+              in a board game phase (insane Catan addition iykyk). They scratch the
+              same itch the work does: read a messy situation, weigh the odds, and
+              make a decent decision before you have all the information.
             </p>
 
             <div className="about__facts">
