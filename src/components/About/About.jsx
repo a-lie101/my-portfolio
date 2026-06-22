@@ -33,7 +33,7 @@ export function About() {
             <p>
               Away from the screen, I play a lot of chess and love playing sports,
               especially volleyball and basketball. Lately I&apos;ve also been deep
-              in a board game phase (insane Catan addition iykyk). They scratch the
+              in a board game phase (obsessed with Catan lately). They scratch the
               same itch the work does: read a messy situation, weigh the odds, and
               make a decent decision before you have all the information.
             </p>
